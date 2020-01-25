@@ -9,6 +9,7 @@
             v-if="questions.length"
             :currentQuestion="questions[index]"
             :next="next"
+            :increment="increment"
           />
         </b-col>
       </b-row>
@@ -34,9 +35,13 @@ export default {
       index:0
     }
   },
+
   methods:{
     next(){
-      this.index++
+      if(this.index== (this.questions.length-1) )
+       this.index=0;
+      else
+      this.index++;
     }
   },
   mounted:function(){
