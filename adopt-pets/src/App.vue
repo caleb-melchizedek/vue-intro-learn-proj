@@ -5,9 +5,11 @@
       <router-link to="/about">About</router-link>|
       <router-link to="/Cats">Cats</router-link>|
       <router-link to="/Dogs">Dogs</router-link>|
-      <router-link to="/Pet">Pet</router-link>
+
     </div>
-    <router-view/>
+      <b-container>
+        <router-view/>
+      </b-container>
   </div>
 </template>
 

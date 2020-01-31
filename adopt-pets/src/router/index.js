@@ -30,7 +30,7 @@ const routes = [
     component: Dogs
   },
   {
-    path: '/Pet',
+    path: '/pets/:species/:id',
     name: 'Pet',
     component: Pet
   }
